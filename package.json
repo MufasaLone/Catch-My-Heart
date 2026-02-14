@@ -1,0 +1,18 @@
+{
+  "name": "valentine-2026",
+  "version": "1.0.0",
+  "description": "Valentine 2026 app",
+  "keywords": [
+    "Valentine"
+  ],
+  "license": "MIT",
+  "author": "Lone_",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^40.4.1"
+  }
+}
