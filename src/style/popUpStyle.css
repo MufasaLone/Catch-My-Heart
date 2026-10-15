@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #ffb6e6, #ffcce6);
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("../font/MinecraftRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Emoji Font";
+    src: url("../font/EmojiFont.ttf") format("truetype");
+}
+
+.minecraftFont {
+    font-family: "Minecraft", Arial;
+}
+
+.emojiFont {
+    font-family: "Emoji Font", Arial;
+    
+}
+
+.popup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#present {
+    background-image: url("../image/Gift.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 68px;
+    height: 72px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+#present:hover {
+    transform: scale(1.1);
+}
+
+#countdown {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+#loveMessage h1 {
+    font-size: 40px;
+    color: #ff1493;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#loveMessage {
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #ff69b4;
+    color: white;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+.heart-particle {
+    font-family: "Emoji Font";
+    position: fixed;
+    font-size: 20px;
+    pointer-events: none;
+    animation: floatUp 2s ease-out forwards;
+    color: #ff1493;
+}
+
+@keyframes floatUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-150px) scale(1.5);
+    }
+}

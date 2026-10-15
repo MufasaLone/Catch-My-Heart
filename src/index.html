@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+  <link rel="stylesheet" href="./style/style.css"/>
+</head>
+<body>
+  <nav>
+    <div class="left-nav">
+      <span class="nav-link">&#x2630;</span>
+      <span class="gameName emojiFont">q</span>
+      <span class="gameName minecraftFont">Catch My Heart</span>
+      <span class="gameName emojiFont">B</span>
+    </div>
+
+    <div class="right-nav">
+      <span class="nav-link" id="minimize">&minus;</span>
+      <span class="nav-link" id="close-app">&#10006;</span>
+    </div>
+
+    <!--
+    &#x2630 is menu
+    &#10006 is close character
+    &#minus is minus character
+    -->
+  </nav>
+  <div id="game">
+    <div id="score" class="minecraftFont">Score: 0</div>
+    <div id="highscore" class="minecraftFont">High Score: 0</div>
+    <div id="basket"></div>
+    <div id="message-container">
+      <div class="message minecraftFont">You caught my heart</div>
+      <div class="message emojiFont">C</div>
+    </div>
+  </div>
+  <div id="restartWrapper">
+    <button id="restartButton">Restart</button>
+  </div>
+  <script src="./js/game.js"></script>
+  <script src="./js/window.js"></script>
+</body>
+</html>

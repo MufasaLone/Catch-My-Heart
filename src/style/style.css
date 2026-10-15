@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: pink;
+    font-family: Arial;
+    text-align: center;
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("../font/MinecraftRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Emoji Font";
+    src: url("../font/EmojiFont.ttf") format("truetype");
+}
+
+.minecraftFont {
+    font-family: "Minecraft", Arial;
+}
+
+.emojiFont {
+    font-family: "Emoji Font", Arial;
+    
+}
+
+nav {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #C562AF;
+}
+
+.nav-link {
+    padding: 8px;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: #C562AF;
+}
+
+.gameName {
+    font-size: 20px;
+}
+
+#game {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.heart {
+    position: absolute;
+    background-image: url("../image/Hearty.png");
+    width: 40px;
+    height: 37px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+#basket {
+    position: absolute;
+    background-image: url("../image/Basket.png");
+    bottom: 45px;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+}
+
+#message-container {
+    position: absolute;
+    white-space: nowrap;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;        /* hidden initially */
+    align-items: center;
+    justify-content: center;
+    gap: 15px;            /* space between text + emoji */
+}
+
+.message {
+    font-size: 40px;
+    color: #ce4f7f;
+}
+
+#restartWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 40px);
+}
+
+#restartButton {
+    display: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #ff69b4;
+    color: white;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff1493;
+    transform: scale(1.05)
+}
+
+#score {
+    color: #C562AF;
+    position: absolute;
+    left: 10px;
+    font-size: 24px;
+}
+
+#highscore {
+    color: #C562AF;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    font-size: 24px;
+}

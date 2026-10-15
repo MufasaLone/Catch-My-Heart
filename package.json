@@ -1,18 +1,35 @@
 {
   "name": "valentine-2026",
   "version": "1.0.0",
-  "description": "Valentine 2026 app",
-  "keywords": [
-    "Valentine"
-  ],
+  "description": "Valentine 2026 game for my girlfriend",
+  "keywords": ["Valentine"],
   "license": "MIT",
   "author": "Lone_",
   "type": "commonjs",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron .",
+    "build": "electron-builder"
   },
   "devDependencies": {
-    "electron": "^40.4.1"
+    "electron": "^40.4.1",
+    "electron-builder": "^26.7.0"
+  },
+  "build": {
+    "appId": "com.Lone_.CatchMyHeart",
+    "productName": "Catch my heart ❤︎⁠",
+    "files": ["**/*"],
+    "win": {
+      "target": "nsis",
+      "icon": "src/image/Gift.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "src/image/Gift.ico"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "src/image/Gift.ico"
+    }
   }
 }
